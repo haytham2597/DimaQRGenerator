@@ -54,10 +54,7 @@ namespace DimaQRGenerator.Libs
         public byte[] Data;
         public QRConfig()
         {
-            this.PropertyChanged += (sender, args) =>
-            {
-                NotifyAll();
-            };
+            this.PropertyChanged += (sender, args) => { NotifyAll(); };
         }
 
         public void NotifyAll()

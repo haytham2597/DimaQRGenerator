@@ -33,8 +33,6 @@ namespace DimaQRGenerator.Forms
             };
             checkBox_quiet_zone.CheckedChanged += CheckBox_config_CheckedChanged;
             checkBox1.CheckedChanged += CheckBox_config_CheckedChanged;
-            
-            
         }
 
         private void CheckBox_config_CheckedChanged(object sender, EventArgs e)

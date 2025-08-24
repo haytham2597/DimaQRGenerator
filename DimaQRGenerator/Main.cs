@@ -36,12 +36,24 @@ namespace DimaQRGenerator
                         SaveQR(sfd.FileName);
                     }
                 }
+
+                if (args.Control && args.KeyCode == Keys.A)
+                {
+                    //Load project
+                }
             };
             button_add_qr.Click += Button_add_qr_Click;
             textBox_qr_data.Select();
+            treeView_qrs.NodeMouseClick += TreeView_qrs_NodeMouseClick;
             newToolStripMenuItem.Click += NewToolStripMenuItem_Click;
             openToolStripMenuItem.Click += OpenToolStripMenuItem_Click;
             saveToolStripMenuItem.Click += SaveToolStripMenuItem_Click;
+            //treeView_qrs.Nodes.Add(new TreeNode($"Capa {treeView_qrs.Nodes.Count + 1}") { Tag = QRC });
+        }
+
+        private void TreeView_qrs_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void Button_add_qr_Click(object sender, EventArgs e)

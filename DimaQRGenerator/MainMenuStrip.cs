@@ -24,7 +24,7 @@ namespace DimaQRGenerator
         {
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
-                sfd.Filter = "*.dimaqrproj";
+                sfd.Filter = "*.qrproj";
                 if (sfd.ShowDialog() != DialogResult.OK)
                     return;
                 SaveProject(sfd.FileName);
@@ -34,6 +34,7 @@ namespace DimaQRGenerator
         private void SaveProject(string path)
         {
             //Serialize all 
+            throw new NotImplementedException();
         }
     }
 }
